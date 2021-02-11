@@ -1,4 +1,4 @@
-## ABOUT
+## About
 
 ## Get Started 🚀
 
