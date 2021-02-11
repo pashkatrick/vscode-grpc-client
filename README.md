@@ -1,6 +1,6 @@
-# ABOUT
+## ABOUT
 
-# Get Started 🚀
+## Get Started 🚀
 
 ## ChangeLog
 See CHANGELOG [here](CHANGELOG.md)
