@@ -1,9 +1,10 @@
 # Change Log
 
-All notable changes to the "grpc-client" extension will be documented in this file.
+## [2.0.*]
+- ...
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+## [1.0.*]
 
 - Initial release
+- grpc_cli support only
+- basic response format
