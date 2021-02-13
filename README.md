@@ -8,11 +8,11 @@ And also you can a storage collections of queries inside vscode now :)
 Install [extension](https://marketplace.visualstudio.com/items?itemName=pashkatrick.grpc-client) in VS Code.    
 Set your gRPC requests like this:
 
-![image_2](https://github.com/pashkatrick/vscode-grpc-client/blob/main/assets/i_2.png)
+![image_2](/assets/i_2.png)
 
 Select it and `cmd + shift + p`, then `gRPC Client: Send Request` to run it
 
-![image_1](https://github.com/pashkatrick/vscode-grpc-client/blob/main/assets/i_1.png)
+![image_1](/assets/i_1.png)
 
 ## ChangeLog
 See CHANGELOG [here](CHANGELOG.md)
