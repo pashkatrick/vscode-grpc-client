@@ -18,7 +18,7 @@
         "type": "git",
         "url": "https://github.com/pashkatrick/vscode-grpc-client.git"
     },
-    "version": "1.0.0",
+    "version": "1.0.2",
     "engines": {
         "vscode": "^1.53.0"
     },
