@@ -5,7 +5,7 @@ async function executeJSON(command) {
 	exec(command, function (error, stdout, stderr) {
 		if (error) {
 			vscode.window.showInformationMessage(error);
-		} else {
+		} else if (stdout) {
 			vscode.workspace.openTextDocument({
 				content: 'Response:\n\n' + JSON.stringify(JSON.parse(stdout), undefined, 4),
 				language: 'json'
@@ -14,6 +14,8 @@ async function executeJSON(command) {
 					viewColumn: vscode.ViewColumn.Beside
 				});
 			});
+		} else {
+			vscode.window.showInformationMessage(stderr);
 		}
 	});
 };
@@ -22,7 +24,7 @@ async function execute(command) {
 	exec(command, function (error, stdout, stderr) {
 		if (error) {
 			vscode.window.showInformationMessage(error);
-		} else {
+		} else if (stdout) {
 			vscode.workspace.openTextDocument({
 				content: 'Response:\n\n' + stdout,
 			}).then(document => {
@@ -30,6 +32,8 @@ async function execute(command) {
 					viewColumn: vscode.ViewColumn.Beside
 				});
 			});
+		} else {
+			vscode.window.showInformationMessage(stderr);
 		}
 	});
 };
