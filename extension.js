@@ -39,6 +39,8 @@ async function GetSelectedText() {
 	let commandLine = editor.document.lineAt(editor.selection.start.line).text;
 	if (commandLine.includes('grpc_cli')) {
 		grpcCliClient(editor, commandLine)
+	} else if (commandLine.includes('grpcurl')) {
+		grpcUrlClient(editor, commandLine)
 	} else {
 		vscode.window.showInformationMessage('Can\'t recognize a command');
 	}
@@ -50,6 +52,15 @@ async function grpcCliClient(editor, cLine) {
 	if (body) {
 		let exeCommand = cLine + "'" + JSON.stringify(JSON.parse(body)) + "'"
 		executeJSON(exeCommand)
+	} else {
+		execute(cLine)
+	}
+}
+
+async function grpcUrlClient(editor, cLine) {
+	var text = editor.document.getText(editor.selection);
+	if (text.includes('-d')) {
+		executeJSON(cLine)
 	} else {
 		execute(cLine)
 	}

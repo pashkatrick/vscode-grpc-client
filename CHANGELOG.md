@@ -1,7 +1,9 @@
 # Change Log
 
 ## [2.0.*]
-- ...
+- grpcurl supports
+- update requests format 
+- json response
 
 ## [1.0.*]
 
