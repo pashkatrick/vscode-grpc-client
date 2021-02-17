@@ -50,7 +50,7 @@ async function grpcCliClient(editor, cLine) {
 	var text = editor.document.getText(editor.selection);
 	let body = text.replace(cLine, '')
 	if (body) {
-		let exeCommand = cLine + "'" + JSON.stringify(JSON.parse(body)) + "'"
+		let exeCommand = cLine + " '" + JSON.stringify(JSON.parse(body)) + "'"
 		executeJSON(exeCommand)
 	} else {
 		execute(cLine)
