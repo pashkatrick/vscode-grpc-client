@@ -7,8 +7,8 @@ async function executeJSON(command) {
 			vscode.window.showInformationMessage(error);
 		} else if (stdout) {
 			vscode.workspace.openTextDocument({
-				content: 'Response:\n\n' + JSON.stringify(JSON.parse(stdout), undefined, 4),
-				language: 'json'
+				content: '// Response:\n\n' + JSON.stringify(JSON.parse(stdout), undefined, 4),
+				language: 'jsonc'
 			}).then(document => {
 				vscode.window.showTextDocument(document, {
 					viewColumn: vscode.ViewColumn.Beside
