@@ -3,6 +3,9 @@ I hope, that should make it easier and more flexibility to work with [gprc_cli](
 And also you can a storage collections of queries inside vscode now :)  
 
 ## Get Started 🚀
+
+<a href="https://www.buymeacoffee.com/pashkatrick" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-blue.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 167px !important;" ></a>     
+
 `brew install grpc` or/and `brew install grpcurl` if you haven't.  
 
 Install [extension](https://marketplace.visualstudio.com/items?itemName=pashkatrick.grpc-client) in VS Code.    
